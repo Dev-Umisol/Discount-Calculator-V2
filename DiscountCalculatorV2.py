@@ -1,7 +1,13 @@
+
+from abc import ABC, abstractmethod
+
 class Product:
-    def __init__(self, name: str, price: float): # <-- Type hints
+    def __init__(self, name: str, price: float) -> None: # <-- Type hints
         self.name = name
         self.price = price
     
-    def __str__(self):
+    def __str__(self) -> str:
         return f"{self.name} - ${self.price}"
+    
+product = Product('Wireless Mouse', 50.0)
+print(product)
