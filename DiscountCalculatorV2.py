@@ -1,3 +1,4 @@
+# Building a better discount calculator to show Python journey along with reinforcing learning on abstraction
 
 from abc import ABC, abstractmethod
 
